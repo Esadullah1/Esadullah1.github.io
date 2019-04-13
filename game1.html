@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title></title>
+</head>
+
+<body onLoad="startGame()" background="img/achtergrond.jpg">
+
+
+
+		<ul>
+  			<li><a class="active" href="index.html">Home</a></li>
+  			<li><a href="uiteg.html">Uitleg</a></li>
+  			<li><a href="game1.html">Spelletje 1</a>
+  			<li><a href="game2.html">Spelletje 2</a>
+  			<li><a href="game3.html">Spelletje 3</a>
+		</ul>
+
+
+		<div id="sps"></div>
+
+
+
+		<h1 class="h1">Rock, Paper, Scissors</h1>
+
+			<img class="sps" src="img/steen.PNG" onclick="checkAnsw('steen')">
+			<img class="sps" src="img/Papier.PNG" onclick="checkAnsw('papier')">
+			<img class="sps" src="img/schaar.PNG" onclick="checkAnsw('schaar')">
+
+
+<input type="text" value="" id="compChoice">  
+
+<div id="uitkomst"></div>
+<br>
+<br>
+<br>
+<button id="opnieuw" onclick="opnieuw()">Opnieuw spelen</button>
+
+<script type="text/javascript" src="javascript/game1.js"></script>
+</body>
+</html>	
